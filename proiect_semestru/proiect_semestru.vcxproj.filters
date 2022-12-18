@@ -21,9 +21,21 @@
     <ClCompile Include="Bilet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Eveniment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Turnichet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bilet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Eveniment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Turnichet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

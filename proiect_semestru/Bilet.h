@@ -14,36 +14,38 @@ class Bilet {
 	int rand;
 	int loc;
 
-	
+
 
 public:
 	//constructori
 	Bilet();
-	Bilet(int, int, int, int);
+	Bilet(int, int, string);
 	Bilet(const Bilet&);
 	~Bilet();
 
 
-	
+
 
 	//getteri
-	int getRand() ;
+	int getRand();
 	int getLoc();
 	string getSector();
-	int getLoc();
-	string getDetaliiEveniment();
-	int getNrBileteEmise() ;
-	
+	static string getDetaliiEveniment();
+	static int getNrBileteEmise();
+	static int* getBileteEmise();
+
 	//setteri
 	void setRand(int);
 	void setLoc(int);
 	void setSector(string);
+	//static void setDetaliiEveniment(Eveniment);
 
 	//metode
-	void setDetaliiEvenimenr(string );
+	void setDetaliiEvenimenr(string);
 	void anulareBilet();
-    void generareBilet(int, int, int);
+	void generareBilet(string, int, int);
 	static void biletNouEmis(int);
+	
 
 	//supraincarcari
 	int operator[](int);
@@ -58,4 +60,3 @@ public:
 	friend ostream& operator<<(ostream&, Bilet);
 	friend istream& operator>>(istream&, Bilet&);
 };
-
